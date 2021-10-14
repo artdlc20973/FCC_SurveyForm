@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat|Lato");
+
+* {
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://i.ibb.co/5x0SbT5/edge-png.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  border: 2px solid #fff;
+  padding: 1rem;
+  margin: 0 auto;
+  height: 100vh;
+  align-content: center;
+}
+
+@media (max-width: 800px) {
+  .container {
+    text-align: left;
+    border: 2px solid #fff;
+    padding: 0.7rem;
+    margin: 1rem auto;
+    height: 100vh;
+    align-content: center;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    text-align: left;
+    padding: 0.7rem;
+    margin: 1rem auto;
+    height: 100vh;
+    align-content: center;
+    font-size: 0.9rem;
+  }
+}
