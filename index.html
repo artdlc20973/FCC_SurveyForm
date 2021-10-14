@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Work Order Form</h1>
+    <p id="description"></p>
+    <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+        </div>
+        <br>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+        </div>
+       <br>
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required="">
+            <option disabled="" selected="" value="">Select current role</option>
+            <option value="BioMed">BioMed</option>
+            <option value="Nurse">Therapist</option>
+            <option value="Dept Mngr">Nurse</option>
+            <option value="Therapist">Manager</option>
+          </select>
+        </div>
+    
+        <div class="form-group">
+          <p>Would you recommend our Linac Service to your Department?</p>
+          <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
+          <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+    
+          <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+        </div>
+    
+        <div class="form-group">
+          <p>
+            What do you like about our Service Engineers?
+          </p>
+          <select id="most-like" name="mostLike" class="form-control" required="">
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="knowledgable">Knowledgable</option>
+            <option value="promptness">Promptness</option>
+            <option value="communication">Communication</option>
+            <option value="troubleshooting">Troubleshooting</option>
+          </select>
+        </div>
+    
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+    
+          <label><input name="prefer" value="communication" type="checkbox" class="input-checkbox">Communication</label>
+          <label>
+            <input name="prefer" value="Troubleshooting" type="checkbox" class="input-checkbox">Troubleshooting</label>
+          <label><input name="prefer" value="Promptness" type="checkbox" class="input-checkbox">Promptness</label>
+          <label><input name="prefer" value="Work Order Closure" type="checkbox" class="input-checkbox">Work Order Closure</label>
+          <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">Repairs Follow Up</label>
+        </div>
+    
+        <div class="form-group">
+          <p>Suggestions/ Comments to improve our service?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Please input comments (i.e. communicate better, repair faster, send follow up emails)" rows="10" cols="50"></textarea>
+        </div>
+    
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit Work Order
+          </button>
+        </div>
+      </form>
+</body>
+</html>
+
+
+<!-- 
+User Story #1: I can see a title with id="title" in H1 sized text.
+**************************
+User Story #2: I can see a short explanation with id="description" in P sized text.
+**************************
+User Story #3: I can see a form with id="survey-form".
+**************************
+User Story #4: Inside the form element, I am required to enter my name in a field with id="name".
+**************************
+User Story #5: Inside the form element, I am required to enter an email in a field with id="email".
+**************************
+User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
+**************************
+User Story #7: Inside the form, I can enter a number in a field with id="number".
+*************************
+User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
+************************
+User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
+
+User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
+
+User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.
+
+User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
+
+User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
+
+User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
+
+User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
+
+User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs. -->
